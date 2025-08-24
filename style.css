@@ -10,7 +10,7 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
-    background-image: url('../image/bg.jpg');
+    background-image: url('./image/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
