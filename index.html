@@ -4,31 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>To Do</title>
 </head>
 <body>
-        <div id="profile">
-            <input type="text" id="username" placeholder="Masukkan Nama" required>
-            <input type="text" id="position" placeholder="Masukkan Jabatan" required> 
-            <button id="btnSubmitProfile" type="submit">submit</button>
+    <div class="profile-card">
+        <div class="card-header">
+            <h1 id="profile-h1">Profile</h1>
+            <p id="date-today"></p>
         </div>
-    <br>
-    <br>
-    <br>
-    <form id="form" action="">
-        <input id="input" type="text" placeholder="To Do" required>
-        <select name="priority" id="priority">    
-            <option value="High">high</option>
-            <option value="Medium">Medium</option>
-            <option value="Low">Low</option>
-        </select>
-        <input type="date" id="date">
-        <button>submit</button>
-    </form>
-    <input type="checkbox" id="cek" >
-    <button id="delete">delete all</button>
+        <form id="profile" action="">
+                <p>Nama :</p>
+                <input type="text" id="username" placeholder="Masukkan Nama" required>
+                <p>Jabatan :</p>
+                <input type="text" id="position" placeholder="Masukkan Jabatan" required> 
+                <button class="btn-profile" id="btnSubmitProfile" type="submit">SUBMIT</button>
+        </form>
+    </div>
 
-    <div id="container"></div>
+    
+    <div class="todo-form">
+        <form id="form" action="">
+            <p>Task :</p>
+            <input id="input" type="text" placeholder="To Do" required>
+            <p>Priority :</p>
+            <select name="priority" id="priority">    
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <p>Date :</p>
+            <input type="date" id="date" required>
+            <button class="btn-submit" type="submit">SUBMIT</button>
+            
+        </form>
+        
+    </div>
+    
+    <div class="ToDo">
+        <div class="card-header">
+            <h1>To Do</h1>
+            <button class="btn-delete" id="delete">DELETE ALL</button>
+        </div>
+        <div id="container"></div>
+    </div>
+
+    <div class="done-card">
+        <H1>Done</H1>
+        <div id="container-done">
+        </div>
+    </div>
 </body>
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
 </html>

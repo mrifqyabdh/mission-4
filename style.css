@@ -1,4 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    background-image: url('../image/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-card {
+  background: #fff;
+  height: 320px;
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.profile-card-done {
+  background: #fff;
+  height: 150px;
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+
+.btn-profile {
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.todo-form  {
+  background: #fff;
+  height: 340px;
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-submit {
+    display: block;
+    margin: 10px 0px 0px auto;
+}
+.done-card {
+  background: #fff;
+  height: 400px;
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.ToDo {
+  background: #fff;
+  height: 400px;
+  width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: auto;
+}
+
+.ToDo p, .done-card p{
+    display: flex;
+    margin-left: 10px;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #444;
+}
+
+/* Input and Select */
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Delete button (special color) */
+.btn-delete {
+  background: #e74c3c;
+  color: white;
+  font-size: 12px;
+  padding: 5px 5px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#delete:hover {
+  background: #c0392b;
+}
+
+
+/* Todo Container */
+#container, #container-done {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+#container div, #container-done div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
 .done {
-    text-decoration: line-through;
-    color: red;
+  text-decoration: line-through;
+  color: #888;
+  background: #eef5ee;
+}
+/* Done tasks style */
+#container-done div {
+  text-decoration: line-through;
+  color: #888;
+  background: #eef5ee;
 }
